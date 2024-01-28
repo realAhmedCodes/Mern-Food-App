@@ -168,14 +168,14 @@ export const CreateRecipe = () => {
           value={recipe.name}
           onChange={handleChange}
         />
-        <label htmlFor="description">Description</label>
+        <label htmlFor="description">Recipe Description</label>
         <textarea
           id="description"
           name="description"
           value={recipe.description}
           onChange={handleChange}
         ></textarea>
-        <label htmlFor="ingredients">Ingredients</label>
+        <label htmlFor="ingredients">Recipe Ingredients</label>
         {recipe.ingredients.map((ingredient, index) => (
           <input
             key={index}
